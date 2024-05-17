@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TestMatchProfile.WebApi</name>
+    </assembly>
+    <members>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.AuthorController.Get(TestMatchProfile.Application.Features.Author.Queries.GetAuthors.GetAuthorsQuery)">
+            <summary>
+            Gets a list of Authors based on the provided filter.
+            </summary>
+            <param name="filter">The filter used to query the Authors.</param>
+            <returns>A list of Authors.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.LegalContractsController.Get(TestMatchProfile.Application.Features.LegalContracts.Queries.GetLegalContracts.GetLegalContractsQuery)">
+            <summary>
+            Gets a list of LegalContracts based on the provided filter.
+            </summary>
+            <param name="filter">The filter used to query the LegalContracts.</param>
+            <returns>A list of LegalContracts.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.LegalContractsController.Get(System.Guid)">
+            <summary>
+            Gets a LegalContract by its Id.
+            </summary>
+            <param name="id">The Id of the LegalContract.</param>
+            <returns>The LegalContract with the specified Id.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.LegalContractsController.Post(TestMatchProfile.Application.Features.LegalContracts.Commands.CreateLegalContract.CreateLegalContractCommand)">
+            <summary>
+            Creates a new LegalContract.
+            </summary>
+            <param name="command">The command containing the data for the new LegalContract.</param>
+            <returns>A 201 Created response containing the newly created LegalContract.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.LegalContractsController.AddMock(TestMatchProfile.Application.Features.LegalContracts.Commands.CreateLegalContract.CreateLegalContractCommand)">
+            <summary>
+            Sends an InsertLegalContractCommand to the mediator.
+            </summary>
+            <param name="command">The command to be sent.</param>
+            <returns>The result of the command.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.LegalContractsController.Paged(TestMatchProfile.Application.Features.LegalContracts.Queries.GetLegalContracts.PagedLegalContractQuery)">
+            <summary>
+            Retrieves a paged list of LegalContracts.
+            </summary>
+            <param name="query">The query parameters for the paged list.</param>
+            <returns>A paged list of LegalContracts.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.LegalContractsController.Put(System.Int32,TestMatchProfile.Application.Features.LegalContracts.Commands.UpdateLegalContract.UpdateLegalContractCommand)">
+            <summary>
+            Updates a LegalContract with the given id using the provided command.
+            </summary>
+            <param name="id">The id of the LegalContract to update.</param>
+            <param name="command">The command containing the updated information.</param>
+            <returns>The updated LegalContract.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.LegalContractsController.Delete(System.Int32)">
+            <summary>
+            Deletes a LegalContract by its Id.
+            </summary>
+            <param name="id">The Id of the LegalContract to delete.</param>
+            <returns>The result of the deletion.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.LegalEntityController.Get(TestMatchProfile.Application.Features.LegalEntity.Queries.GetLegalEntity.GetLegalEntityQuery)">
+            <summary>
+            Gets a list of LegalEntitys based on the provided filter.
+            </summary>
+            <param name="filter">The filter used to query the LegalEntitys.</param>
+            <returns>A list of LegalEntitys.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.PositionsController.Get(TestMatchProfile.Application.Features.Positions.Queries.GetPositions.GetPositionsQuery)">
+            <summary>
+            Gets a list of positions based on the provided filter.
+            </summary>
+            <param name="filter">The filter used to query the positions.</param>
+            <returns>A list of positions.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.PositionsController.Get(System.Guid)">
+            <summary>
+            Gets a position by its Id.
+            </summary>
+            <param name="id">The Id of the position.</param>
+            <returns>The position with the specified Id.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.PositionsController.Post(TestMatchProfile.Application.Features.Positions.Commands.CreatePosition.CreatePositionCommand)">
+            <summary>
+            Creates a new position.
+            </summary>
+            <param name="command">The command containing the data for the new position.</param>
+            <returns>A 201 Created response containing the newly created position.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.PositionsController.AddMock(TestMatchProfile.Application.Features.Positions.Commands.CreatePosition.CreatePositionCommand)">
+            <summary>
+            Sends an InsertMockPositionCommand to the mediator.
+            </summary>
+            <param name="command">The command to be sent.</param>
+            <returns>The result of the command.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.PositionsController.Paged(TestMatchProfile.Application.Features.Positions.Queries.GetPositions.PagedPositionsQuery)">
+            <summary>
+            Retrieves a paged list of positions.
+            </summary>
+            <param name="query">The query parameters for the paged list.</param>
+            <returns>A paged list of positions.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.PositionsController.Put(System.Guid,TestMatchProfile.Application.Features.Positions.Commands.UpdatePosition.UpdatePositionCommand)">
+            <summary>
+            Updates a position with the given id using the provided command.
+            </summary>
+            <param name="id">The id of the position to update.</param>
+            <param name="command">The command containing the updated information.</param>
+            <returns>The updated position.</returns>
+        </member>
+        <member name="M:TestMatchProfile.WebApi.Controllers.v1.PositionsController.Delete(System.Guid)">
+            <summary>
+            Deletes a position by its Id.
+            </summary>
+            <param name="id">The Id of the position to delete.</param>
+            <returns>The result of the deletion.</returns>
+        </member>
+    </members>
+</doc>
